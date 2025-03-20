@@ -4,7 +4,7 @@ import createItem from "./services/item.js";
 const myCart = [];
 const myWhishList = [];
 
-console.log("Welcome to the your Shopee Cart!");
+console.log("Bem vindo ao seu carrinho da Shopee!");
 
 //criando dois itens
 const item1 = await createItem("hotwheels ferrari", 20.99, 1);
@@ -19,7 +19,4 @@ await cartService.removeItem(myCart, item2);
 await cartService.removeItem(myCart, item2);
 
 await cartService.displaycart(myCart);
-// deletei dois itens do carrinho
-// await cartService.deleteItem(myCart, item2.name);
-// await cartService.deleteItem(myCart, item1.name);
 await cartService.calculateTotal(myCart);
